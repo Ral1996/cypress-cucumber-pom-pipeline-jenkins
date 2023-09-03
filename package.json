@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "cypress:open": "cypress open",
-    "runOnChromeTerminal": "cypress run --browser chrome"
+    "runOnChromeTerminal": "cypress run --browser chrome",
+    "runOnChromeBrowser": "cypress run --browser chrome --headed"
   },
   "keywords": [
     "cypress.io",
@@ -21,5 +22,15 @@
     "cypress": "^12.17.4",
     "cypress-cucumber-preprocessor": "^4.3.1",
     "cypress-mochawesome-reporter": "^3.5.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    },
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": "cypress/integration/PageStep/"
   }
 }

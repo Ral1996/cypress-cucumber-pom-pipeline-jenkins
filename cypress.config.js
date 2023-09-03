@@ -11,12 +11,14 @@ module.exports = defineConfig({
     inlineAssets: true,
     saveAllAttempts: true,
   },
+  video:false,
+  videoCompression: false,
   e2e: {
     setupNodeEvents(on, config) {
       // implement node event listeners here
       require("cypress-mochawesome-reporter/plugin")(on),
         on("file:preprocessor", cucumber());
     },
-    specPattern: ["cypress/e2e/*.feature", "cypress/e2e/*.cy.{js,jsx,ts,tsx}"],
+    specPattern: ["cypress/e2e/**/*.feature", "cypress/e2e/**/*.cy.{js,jsx,ts,tsx}"],
   },
 });
