@@ -4,9 +4,6 @@ on:
     branches:
       - "stage"
       - "main"
-    branches-ignore:
-      - "pages"
-      - "feature/**"
 jobs:
   cypress-run:
     runs-on: windows-latest
