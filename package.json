@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "cypress:open": "cypress open",
-    "runOnChromeTerminal": "cypress run --browser chrome",
+    "runOnChromeTerminal": "cypress run --browser chrome --env version=staging",
     "runOnChromeBrowser": "cypress run --browser chrome --headed",
-    "runOnChromeTerminalSteps": "cypress run --env tags='@LoginWebPage and @InvalidCredential'",
-    "runOnChromeTerminalStepInvalidCredentialBrowser": "cypress run --browser chrome --headed --env tags='@InvalidCredential not @ValidCredential'",
+    "runOnChromeTerminalSteps": "cypress run --env tags='@LoginWebPage and @InvalidCredential' version=staging",
+    "runOnChromeTerminalStepInvalidCredentialBrowser": "cypress run --browser chrome --headed --env tags='@InvalidCredential not @ValidCredential' version=staging",
     "runOnChromeTerminalStaging": "cypress run --browser chrome --env version=staging"
   },
   "keywords": [
