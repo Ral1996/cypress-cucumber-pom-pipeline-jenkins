@@ -16,11 +16,10 @@ module.exports = defineConfig({
   e2e: {
     setupNodeEvents(on, config) {
       var version = config.env.version || "local";
-      console.log(config.env.version)
       var urls = {
-        local: "",
+        local: "https://www.saucedemo.com/",
         staging: "https://www.saucedemo.com/",
-        prod: "",
+        prod: "https://www.saucedemo.com/",
       };
 
       // choosing version from urls object
