@@ -15,9 +15,9 @@ module.exports = defineConfig({
   videoCompression: false,
   e2e: {
     setupNodeEvents(on, config) {
-      const version = config.env.version || "local";
+      var version = config.env.version || "local";
       console.log(config.env.version)
-      const urls = {
+      var urls = {
         local: "",
         staging: "https://www.saucedemo.com/",
         prod: "",
