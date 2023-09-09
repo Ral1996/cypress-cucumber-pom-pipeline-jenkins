@@ -1,0 +1,218 @@
+[
+  {
+    "description": "    This is a test automation demo with Cypress, Cucumber and NodeJS tools and technologies.",
+    "keyword": "Feature",
+    "name": "Test Login Page For Demo Cypress.io",
+    "line": 2,
+    "id": "test-login-page-for-demo-cypress.io",
+    "tags": [],
+    "uri": "Login.feature",
+    "elements": [
+      {
+        "id": "test-login-page-for-demo-cypress.io;user-should-be-able-to-login-using-valid-credentials",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "User Should Be Able To Login Using Valid Credentials",
+        "tags": [
+          {
+            "name": "@ValidCredential",
+            "line": 6
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "Visit Practice Test Automation Website",
+            "result": {
+              "status": "passed",
+              "duration": 2670000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "User Provide Username \"standard_user\"",
+            "result": {
+              "status": "passed",
+              "duration": 655000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "User Provide Password \"secret_sauce\"",
+            "result": {
+              "status": "passed",
+              "duration": 991000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "User Click On Login Button To Log In Into The Practice Test Automation Website",
+            "result": {
+              "status": "passed",
+              "duration": 149000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "User Read The Text Of Successfully Log In Into The Website",
+            "result": {
+              "status": "passed",
+              "duration": 1688000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "User Click On Logout Button For Reply To The Login Website",
+            "result": {
+              "status": "passed",
+              "duration": 1077000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-login-page-for-demo-cypress.io;user-should-not-be-able-to-login-using-invalid-credentials",
+        "keyword": "Scenario",
+        "line": 30,
+        "name": "User Should Not Be Able To Login Using Invalid Credentials",
+        "tags": [
+          {
+            "name": "@InvalidCredential",
+            "line": 19
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 21,
+            "name": "Visit Practice Test Automation Website",
+            "result": {
+              "status": "passed",
+              "duration": 1140000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "User Provide Username \"locked_out_user\"",
+            "result": {
+              "status": "passed",
+              "duration": 592000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "User Provide Password \"secret_sauce\"",
+            "result": {
+              "status": "passed",
+              "duration": 969000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "User Click On Login Button To Log In Into The Practice Test Automation Website",
+            "result": {
+              "status": "passed",
+              "duration": 98000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "User See An Alert Error \"Epic sadface: Sorry, this user has been locked out.\"",
+            "result": {
+              "status": "passed",
+              "duration": 512000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-login-page-for-demo-cypress.io;user-should-not-be-able-to-login-using-invalid-credentials",
+        "keyword": "Scenario",
+        "line": 31,
+        "name": "User Should Not Be Able To Login Using Invalid Credentials",
+        "tags": [
+          {
+            "name": "@InvalidCredential",
+            "line": 19
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 21,
+            "name": "Visit Practice Test Automation Website",
+            "result": {
+              "status": "passed",
+              "duration": 817000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "User Provide Username \"standard_user\"",
+            "result": {
+              "status": "passed",
+              "duration": 504000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "User Provide Password \"1234\"",
+            "result": {
+              "status": "passed",
+              "duration": 782000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "User Click On Login Button To Log In Into The Practice Test Automation Website",
+            "result": {
+              "status": "passed",
+              "duration": 95000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "User See An Alert Error \"Epic sadface: Username and password do not match any user in this service\"",
+            "result": {
+              "status": "passed",
+              "duration": 498000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
