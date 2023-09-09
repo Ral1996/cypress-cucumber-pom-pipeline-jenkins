@@ -5,6 +5,7 @@
         "buttonLoginId": "#login-button",
         "labelSuccessLoginClass": ".app_logo",
         "button_menu": "#react-burger-menu-btn",
-        "buttonLogoutId": "#logout_sidebar_link" 
+        "buttonLogoutId": "#logout_sidebar_link",
+        "dataTest":".error"
     }
 }

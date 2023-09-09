@@ -35,4 +35,12 @@ export class LoginPageElements {
         cy.get(loginPageWebElements.LoginPageWebElements.buttonLogoutId).click();
         cy.screenshot();
     }
+
+    readFileAlert(text){
+        cy.log('Verificando Alerta');
+        cy.get(loginPageWebElements.LoginPageWebElements.dataTest).should("contain",text);
+        cy.screenshot();
+    }
+
+
 }
