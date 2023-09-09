@@ -3,13 +3,13 @@ import { LoginPageElements } from "../../integration/PageAction/Login/Login";
 
 const LoginElements = new LoginPageElements;
 
-var baseURL = "https://www.saucedemo.com/";
+// var baseURL = "https://www.saucedemo.com/";
 /*var usernameHash = "standard_user";
 var passwordHash = "secret_sauce";*/
 
 
 Given('Visit Practice Test Automation Website', function() {
-    LoginElements.visitWebSite(baseURL);
+    LoginElements.visitWebSite('/');
 });
 
 Then('User Provide Username {string}', function(usernameHash) {

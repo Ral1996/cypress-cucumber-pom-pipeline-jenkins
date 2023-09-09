@@ -8,7 +8,8 @@
     "runOnChromeTerminal": "cypress run --browser chrome",
     "runOnChromeBrowser": "cypress run --browser chrome --headed",
     "runOnChromeTerminalSteps": "cypress run --env tags='@LoginWebPage and @InvalidCredential'",
-    "runOnChromeTerminalStepInvalidCredentialBrowser": "cypress run --browser chrome --headed --env tags='@InvalidCredential not @ValidCredential'"
+    "runOnChromeTerminalStepInvalidCredentialBrowser": "cypress run --browser chrome --headed --env tags='@InvalidCredential not @ValidCredential'",
+    "runOnChromeTerminalStaging": "cypress run --browser chrome --env version=staging"
   },
   "keywords": [
     "cypress.io",
