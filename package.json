@@ -6,7 +6,8 @@
   "scripts": {
     "cypress:open": "cypress open",
     "runOnChromeTerminal": "cypress run --browser chrome",
-    "runOnChromeBrowser": "cypress run --browser chrome --headed"
+    "runOnChromeBrowser": "cypress run --browser chrome --headed",
+    "runOnChromeTerminalSteps": "cypress run --env tags='@LoginWebPage and @ValidCredential'"
   },
   "keywords": [
     "cypress.io",
@@ -15,7 +16,7 @@
     "pipeline",
     "pom"
   ],
-  "author": "Raul Portillo, Luis Navarro, Laura Venegas",
+  "author": "Raul Portillo, Luis Navarro, Laura Venegas, Loris Orellana",
   "license": "ISC",
   "devDependencies": {
     "crypto-js": "^4.1.1",
@@ -30,7 +31,6 @@
       "filePrefix": "",
       "fileSuffix": ".cucumber"
     },
-    "nonGlobalStepDefinitions": false,
-    "stepDefinitions": "cypress/integration/PageStep/"
+    "stepDefinitions": "cypress/e2e/Login"
   }
 }

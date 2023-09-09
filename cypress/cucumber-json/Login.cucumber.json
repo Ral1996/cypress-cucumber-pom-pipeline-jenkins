@@ -3,7 +3,7 @@
     "description": "    This is a test automation demo with Cypress, Cucumber and NodeJS tools and technologies.",
     "keyword": "Feature",
     "name": "Test Login Page For Demo Cypress.io",
-    "line": 1,
+    "line": 2,
     "id": "test-login-page-for-demo-cypress.io",
     "tags": [],
     "uri": "Login.feature",
@@ -11,65 +11,78 @@
       {
         "id": "test-login-page-for-demo-cypress.io;user-should-be-able-to-login-using-valid-credentials",
         "keyword": "Scenario",
-        "line": 5,
+        "line": 7,
         "name": "User Should Be Able To Login Using Valid Credentials",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@LoginWebPage",
+            "line": 6
+          },
+          {
+            "name": "@ValidCredential",
+            "line": 6
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 6,
+            "line": 8,
             "name": "Visit Practice Test Automation Website",
             "result": {
-              "status": "failed",
-              "duration": 141000000,
-              "error_message": "TypeError: LoginElements.visitWebsite is not a function\n    at Context.eval (cypress/integration/PageStep/LoginStep.cy.js:11:18)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (http://localhost:60840/__cypress/runner/cypress_runner.js:3486:19)\n    at Promise._then (http://localhost:60840/__cypress/runner/cypress_runner.js:1239:17)\n    at Promise._passThrough (http://localhost:60840/__cypress/runner/cypress_runner.js:4110:17)\n    at Promise.lastly.Promise.finally (http://localhost:60840/__cypress/runner/cypress_runner.js:4119:17)\n    at Object.onRunnableRun (http://localhost:60840/__cypress/runner/cypress_runner.js:162210:53)\n    at $Cypress.action (http://localhost:60840/__cypress/runner/cypress_runner.js:41015:28)\n    at Runnable.run (http://localhost:60840/__cypress/runner/cypress_runner.js:144798:13)\n    at next (http://localhost:60840/__cypress/runner/cypress_runner.js:154803:10)\n    at <unknown> (http://localhost:60840/__cypress/runner/cypress_runner.js:154847:5)\n    at timeslice (http://localhost:60840/__cypress/runner/cypress_runner.js:145082:27)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 7,
-            "name": "User Provide Username",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 8,
-            "name": "User Provide Password",
-            "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2229000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 9,
-            "name": "User Click On Login Button To Log In Into The Practice Test Automation Website",
+            "name": "User Provide Username",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 852000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 10,
-            "name": "User Read The Text Of Successfully Log In Into The Website",
+            "name": "User Provide Password",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1235000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 11,
+            "name": "User Click On Login Button To Log In Into The Practice Test Automation Website",
+            "result": {
+              "status": "passed",
+              "duration": 212000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "User Read The Text Of Successfully Log In Into The Website",
+            "result": {
+              "status": "passed",
+              "duration": 2670000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
             "name": "User Click On Logout Button For Reply To The Login Website",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1119000000
             }
           }
         ]

@@ -19,6 +19,14 @@ module.exports = defineConfig({
       require("cypress-mochawesome-reporter/plugin")(on),
         on("file:preprocessor", cucumber());
     },
-    specPattern: ["cypress/e2e/**/*.feature", "cypress/e2e/**/*.cy.{js,jsx,ts,tsx}"],
+    specPattern: "cypress/e2e/**/*.feature", // , ["cypress/e2e/**/*.cy.{js,jsx,ts,tsx}"]
+    watchForFileChanges:false,
+    chromeWebSecurity: false,
+    experimentalModifyObstructiveThirdPartyCode: true,
+    defaultCommandTimeout: 10000,
+    env: {
+      omitFiltered: true,
+      filterSpecs: true
+    },
   },
 });

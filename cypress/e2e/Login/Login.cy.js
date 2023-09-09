@@ -1,5 +1,5 @@
 import { Given, Then} from "cypress-cucumber-preprocessor/steps";
-import { LoginPageElements } from "../PageAction/PageLogin";
+import { LoginPageElements } from "../../integration/PageAction/Login/Login";
 
 const LoginElements = new LoginPageElements;
 
@@ -8,7 +8,7 @@ var usernameHash = "standard_user";
 var passwordHash = "secret_sauce";
 
 Given('Visit Practice Test Automation Website', function() {
-    LoginElements.visitWebsite(baseURL);
+    LoginElements.visitWebSite(baseURL);
 });
 
 Then('User Provide Username', function() {
@@ -24,7 +24,7 @@ Then('User Click On Login Button To Log In Into The Practice Test Automation Web
 });
 
 Then('User Read The Text Of Successfully Log In Into The Website', function() {
-    LoginElements.readLabelSuccessLogin('Logged In Successfully');
+    LoginElements.readLabelSuccessLogin('Swag Labs');
 });
 
 Then('User Click On Logout Button For Reply To The Login Website', function() {

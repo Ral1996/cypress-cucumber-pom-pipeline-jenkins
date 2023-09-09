@@ -1,5 +1,5 @@
 {
-    "LoginPagewWebElements": {
+    "LoginPageWebElements": {
         "usernameId": "#user-name",
         "passwordId": "#password",
         "buttonLoginId": "#login-button",
