@@ -1,0 +1,23 @@
+name: cypress-cucumber-pom-pipeline-jenkins
+on: 
+  push:
+    branches:
+      - "stage"
+      - "main"
+    branches-ignore:
+      - "pages"
+      - "feature/**"
+jobs:
+  cypress-run:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.0.0
+        
+      - name: Cypress run
+        uses: cypress-io/github-action@v6.3.0
+        with:
+          build: npm run build
+          start: npm run runOnChromeTerminal
+        
+        
