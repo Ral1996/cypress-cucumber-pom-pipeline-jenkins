@@ -15,7 +15,7 @@ module.exports = defineConfig({
   videoCompression: false,
   e2e: {
     setupNodeEvents(on, config) {
-      var version = config.env.version || "local";
+      var version = config.env.version || "staging";
       var urls = {
         local: "https://www.saucedemo.com/",
         staging: "https://www.saucedemo.com/",
@@ -32,13 +32,10 @@ module.exports = defineConfig({
       return config;
     },
     specPattern: "cypress/e2e/**/*.feature", // , ["cypress/e2e/**/*.cy.{js,jsx,ts,tsx}"]
+    supportFile: false,
     watchForFileChanges: false,
     chromeWebSecurity: false,
     experimentalModifyObstructiveThirdPartyCode: true,
     defaultCommandTimeout: 10000,
-    env: {
-      omitFiltered: true,
-      filterSpecs: true,
-    },
   },
 });

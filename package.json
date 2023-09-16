@@ -6,8 +6,8 @@
   "scripts": {
     "cypress:open": "cypress open",
     "runOnChromeTerminal": "cypress run --browser chrome --env version=staging",
-    "runOnChromeBrowser": "cypress run --browser chrome --headed",
-    "runOnChromeTerminalSteps": "cypress run --env tags='@LoginWebPage and @InvalidCredential' version=staging",
+    "runOnChromeBrowser": "cypress run --browser chrome --headed --env version=staging",
+    "runOnChromeTerminalSteps": "cypress run --browser chrome --headed --env TAGS=\"@InvalidCredential\" version=staging",
     "runOnChromeTerminalStepInvalidCredentialBrowser": "cypress run --browser chrome --headed --env tags='@InvalidCredential not @ValidCredential' version=staging",
     "runOnChromeTerminalStaging": "cypress run --browser chrome --env version=staging"
   },
@@ -24,7 +24,8 @@
     "crypto-js": "^4.1.1",
     "cypress": "^12.17.4",
     "cypress-cucumber-preprocessor": "^4.3.1",
-    "cypress-mochawesome-reporter": "^3.5.1"
+    "cypress-mochawesome-reporter": "^3.5.1",
+    "cypress-plugin-api": "^2.11.1"
   },
   "cypress-cucumber-preprocessor": {
     "cucumberJson": {
@@ -33,6 +34,8 @@
       "filePrefix": "",
       "fileSuffix": ".cucumber"
     },
-    "stepDefinitions": "cypress/e2e/Login"
+    "filterSpecs": true,
+    "omitFiltered": true,
+    "step_definitions": "cypress/e2e/step_definitions"
   }
 }

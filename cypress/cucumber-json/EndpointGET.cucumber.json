@@ -1,0 +1,51 @@
+[
+  {
+    "description": "    This is a test automation demo with Cypress, Cucumber and NodeJS tools and technologies.",
+    "keyword": "Feature",
+    "name": "Test Endpoints Type GET For Demo Cypress.io",
+    "line": 2,
+    "id": "test-endpoints-type-get-for-demo-cypress.io",
+    "tags": [
+      {
+        "name": "@EndpointsGET",
+        "line": 1
+      }
+    ],
+    "uri": "EndpointGET.feature",
+    "elements": [
+      {
+        "id": "test-endpoints-type-get-for-demo-cypress.io;user-start-test-for-endpoint-get",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "User Start Test For Endpoint GET",
+        "tags": [
+          {
+            "name": "@EndpointsGET",
+            "line": 1
+          },
+          {
+            "name": "@EndpointsGET",
+            "line": 6
+          },
+          {
+            "name": "@EndpointDoNotParameter",
+            "line": 6
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I access api request end point to get users",
+            "result": {
+              "status": "passed",
+              "duration": 2975000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
