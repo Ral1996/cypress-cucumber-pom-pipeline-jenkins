@@ -9,7 +9,8 @@
     "runOnChromeBrowser": "cypress run --browser chrome --headed --env version=staging",
     "runOnChromeTerminalSteps": "cypress run --browser chrome --headed --env TAGS=\"@InvalidCredential\" version=staging",
     "runOnChromeTerminalStepInvalidCredentialBrowser": "cypress run --browser chrome --headed --env tags='@InvalidCredential not @ValidCredential' version=staging",
-    "runOnChromeTerminalStaging": "cypress run --browser chrome --env version=staging"
+    "runOnChromeTerminalStaging": "cypress run --browser chrome --env version=staging",
+    "runCompleteReporter": "node cypress/integration/ReportFiles/CompleteReports.js"
   },
   "keywords": [
     "cypress.io",
@@ -25,7 +26,10 @@
     "cypress": "^12.17.4",
     "cypress-cucumber-preprocessor": "^4.3.1",
     "cypress-mochawesome-reporter": "^3.5.1",
-    "cypress-plugin-api": "^2.11.1"
+    "cypress-plugin-api": "^2.11.1",
+    "fs-extra": "^11.1.1",
+    "multiple-cucumber-html-reporter": "^3.5.0",
+    "path": "^0.12.7"
   },
   "cypress-cucumber-preprocessor": {
     "cucumberJson": {
