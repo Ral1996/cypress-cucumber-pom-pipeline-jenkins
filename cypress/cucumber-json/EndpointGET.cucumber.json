@@ -41,7 +41,7 @@
             "name": "I access api request end point to get users",
             "result": {
               "status": "passed",
-              "duration": 2975000000
+              "duration": 3018000000
             }
           }
         ]

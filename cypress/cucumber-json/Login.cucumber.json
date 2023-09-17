@@ -41,7 +41,7 @@
             "name": "Visit Practice Test Automation Website",
             "result": {
               "status": "passed",
-              "duration": 2750000000
+              "duration": 2545000000
             }
           },
           {
@@ -51,7 +51,7 @@
             "name": "User Provide Username \"standard_user\"",
             "result": {
               "status": "passed",
-              "duration": 1181000000
+              "duration": 830000000
             }
           },
           {
@@ -61,7 +61,7 @@
             "name": "User Provide Password \"secret_sauce\"",
             "result": {
               "status": "passed",
-              "duration": 1779000000
+              "duration": 1751000000
             }
           },
           {
@@ -71,7 +71,7 @@
             "name": "User Click On Login Button To Log In Into The Practice Test Automation Website",
             "result": {
               "status": "passed",
-              "duration": 261000000
+              "duration": 234000000
             }
           },
           {
@@ -81,7 +81,7 @@
             "name": "User Read The Text Of Successfully Log In Into The Website",
             "result": {
               "status": "passed",
-              "duration": 5031000000
+              "duration": 2945000000
             }
           },
           {
@@ -91,7 +91,7 @@
             "name": "User Click On Logout Button For Reply To The Login Website",
             "result": {
               "status": "passed",
-              "duration": 1401000000
+              "duration": 1539000000
             }
           }
         ]
@@ -124,7 +124,7 @@
             "name": "Visit Practice Test Automation Website",
             "result": {
               "status": "passed",
-              "duration": 1305000000
+              "duration": 1324000000
             }
           },
           {
@@ -134,7 +134,7 @@
             "name": "User Provide Username \"locked_out_user\"",
             "result": {
               "status": "passed",
-              "duration": 909000000
+              "duration": 730000000
             }
           },
           {
@@ -144,7 +144,7 @@
             "name": "User Provide Password \"secret_sauce\"",
             "result": {
               "status": "passed",
-              "duration": 1749000000
+              "duration": 1558000000
             }
           },
           {
@@ -154,7 +154,7 @@
             "name": "User Click On Login Button To Log In Into The Practice Test Automation Website",
             "result": {
               "status": "passed",
-              "duration": 117000000
+              "duration": 111000000
             }
           },
           {
@@ -164,7 +164,7 @@
             "name": "User See An Alert Error \"Epic sadface: Sorry, this user has been locked out.\"",
             "result": {
               "status": "passed",
-              "duration": 889000000
+              "duration": 870000000
             }
           }
         ]
@@ -197,7 +197,7 @@
             "name": "Visit Practice Test Automation Website",
             "result": {
               "status": "passed",
-              "duration": 1161000000
+              "duration": 1056000000
             }
           },
           {
@@ -207,7 +207,7 @@
             "name": "User Provide Username \"standard_user\"",
             "result": {
               "status": "passed",
-              "duration": 915000000
+              "duration": 673000000
             }
           },
           {
@@ -217,7 +217,7 @@
             "name": "User Provide Password \"1234\"",
             "result": {
               "status": "passed",
-              "duration": 1415000000
+              "duration": 1324000000
             }
           },
           {
@@ -227,7 +227,7 @@
             "name": "User Click On Login Button To Log In Into The Practice Test Automation Website",
             "result": {
               "status": "passed",
-              "duration": 103000000
+              "duration": 140000000
             }
           },
           {
@@ -237,7 +237,7 @@
             "name": "User See An Alert Error \"Epic sadface: Username and password do not match any user in this service\"",
             "result": {
               "status": "passed",
-              "duration": 912000000
+              "duration": 814000000
             }
           }
         ]
